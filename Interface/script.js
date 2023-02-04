@@ -1,0 +1,3 @@
+function openSampleTest() {
+    alert("Tioccho");
+}

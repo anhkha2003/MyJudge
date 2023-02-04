@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <title>My Judge </title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form class="form-row">
+        <textarea id="submission"
+                  class="form-control d-inline col-md-5"
+                  rows="15"
+                  placeholder="Submission here" 
+        ></textarea>
+        
+        <div class="d-inline col-md-2">
+            <button type="button"
+                    class="mt-5 btn btn-danger btn-block"
+                    onclick=openInput()>
+                Input
+            </button>
+            <button type="button"
+                    class="mt-5 btn btn-primary d-inline btn-block"
+                    onclick=openOutput()>
+                Output
+            </button>
+            <button type="button"
+                    class="mt-5 btn btn-success d-inline btn-block"
+                    onclick=openAnswer()>
+                Answer
+            </button>
+        </div>
+
+        <textarea id="solution"
+                  class="form-control d-inline col-md-5 float-right"
+                  rows="15"
+                  placeholder="Solution here" 
+        ></textarea>
+    </form>
+    
+    <form class="form-row">
+        <div class="d-inline col-md-5">
+            <button type="button"
+                    class="btn btn-info"
+                    onclick=openOG()>
+                Open Generator
+            </button>
+            <button type="button"
+                    class="btn btn-warning float-right"
+                    onclick=openRG()>
+                Run Generator   
+            </button>
+        </div>
+
+        <div class="d-inline col-md-2">
+        </div>
+
+        <div class="d-inline col-md-5">
+            <button type="button"
+                    class="btn btn-secondary"
+                    onclick=openRun()>
+                Compile and Run
+            </button>
+            <button type="button"
+                    class="btn btn-dark float-right"
+                    onclick=openSampleTest()>
+                Sample Test
+            </button>
+        </div>
+    </form>
+
+</body>
+
+</html>
